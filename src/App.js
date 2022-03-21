@@ -35,8 +35,11 @@ function App() {
     }
   
 
+
+
   return (
     <div className="App">
+      
         {(user.email != "") ? (
             <div className="home">
               <Router>
@@ -46,6 +49,8 @@ function App() {
                     <Route path='/' exact component={Help} />
                   </Routes>
               </Router>
+              <div className="bottom">
+              </div>
             </div> 
         ) : (
           <LoginForm Login={Login} error={error}/>

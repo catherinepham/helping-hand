@@ -10,6 +10,9 @@ function LoginForm ({Login, error}) {
 
     return (
         <form onSubmit={submitHandler}>
+            <div className="header">
+                <h1><img src={require('../../hand.png')} height={30} width={40}/> Welcome to Helping Hand <img src={require('../../hand.png')} height={30} width={40}/></h1>
+            </div> 
             <div className="form-inner">
                 <h2>Faculty Login</h2>
                     {(error != "") ? (<div className="error">{error}</div>) : ""}
