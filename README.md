@@ -10,3 +10,6 @@ i'm almost done with the bar component so i can finish that (i'll do the ./compo
 
 
 the next thing we need to do i think would be the format for the queue probably
+
+in the terminal of vs you might need to:
+npm install react-router-dom
