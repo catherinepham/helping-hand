@@ -3,7 +3,11 @@ import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './navBarElements';
 
 
-const Navbar = () => {
+const Navbar = ({history,isLogged}) => {
+    const handleClick=() =>{
+        history.push('/')
+        isLogged(false)
+    }
   return (
     <>
         <Nav>
@@ -14,13 +18,16 @@ const Navbar = () => {
                     <img src={require('../../hand.png')} height={50} width={50} align={'center'} alt="handLogo" />
             </div>
             <Bars />
+            
             <NavMenu>
                 <NavLink to="/account" activeStyle>
                     Account
                 </NavLink>
-                <NavLink to="/logout" activeStyle>
+                
+                <NavLink to="/logout" activeStyle onClick={handleClick}>
                     Logout
                 </NavLink>
+                
             </NavMenu>
      
         </Nav>
