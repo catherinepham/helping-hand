@@ -1,10 +1,18 @@
-<div align="center">
-    <h1>⚔️ Helping-Hand ⚔️</h1>
-</div>
-<br>
+# Teacher UI Started
 
-## Product Vision Statement:
-For students (of all ages) and teachers who need a quick way to communicate questions when students aren’t able to raise their hand the way they could in an in-person classroom. Helping Hands is an extension that provides fast help to students and an admin-like user interface for teachers to access help requests from and set up communication (e.g., video call, chat), fast. If available the teacher can connect to that student in one or two clicks. Unlike other services or communication platforms, Helping Hands is the fastest way for students to be connected to the right person for help. Our product is unique because it can be used through any site that the teacher connects it to, preventing the student from having to ever leave the application or type an email.
+so to login use whatever name and 
+    admin@admin.com for email
+    admin for password
+^using this for now since we don't have twilio yet and we might need it idk
 
-## General Product Description:
-The idea for the product is a way for kids completing their online assignments to reach the teacher for help when they get stuck as efficiently as possible. While the student completes the assignment, there would be a hand logo in the corner of the screen that when pressed, the teacher would be notified of which students need help. It would inform the teacher what problem and assignment the particular student is currently struggling with. The teacher would be able to either select if they are currently ready to help and a google meet link would be set up and sent to the student, select an estimated wait time for the student to see, or type a quick message. 
+
+i'm almost done with the bar component so i can finish that (i'll do the ./components/NavBar stuff)
+
+hi there S
+
+the next thing we need to do i think would be the format for the queue probably
+
+in the terminal of vs you might need to:
+npm install react-router-dom
+
+something random
