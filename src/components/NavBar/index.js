@@ -1,6 +1,8 @@
 import userEvent from '@testing-library/user-event';
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './navBarElements';
+import app from '../../App';
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './navBarElements'; 
+
 
 
 const Navbar = ({history,isLogged}) => {
@@ -11,9 +13,8 @@ const Navbar = ({history,isLogged}) => {
   return (
     <>
         <Nav>
-            <NavBtn>
-                <h1> Welcome</h1> 
-            </NavBtn>
+            <h2 className="welcome-1">Welcome,</h2>
+        
             <div className="image-navbar">
                     <img src={require('../../hand.png')} height={50} width={50} align={'center'} alt="handLogo" />
             </div>

@@ -10,7 +10,10 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) / 2);
     z-index: 10;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 `;
 
 export const NavLink = styled(Link)`
@@ -23,7 +26,7 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-        color: #15cdfc;
+        color: #ebddf7;
     }
 `;
 
@@ -93,8 +96,9 @@ export const NavBtnLink = styled(Link)`
                 #cf82df,
                 #7c0686
             );
-        color: #010606;
+        color: #8c69ad;
     }
 `;
+
 
 
