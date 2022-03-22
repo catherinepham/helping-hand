@@ -43,13 +43,4 @@ const Navbar = ({history,isLogged}) => {
 export default Navbar
 
 
-  {/* <NavBtn>
-                    <img src={require('../../hand.png')} height={50} width={50} alt="handLogo" />
-                </NavBtn> */}
-     /* <NavBtnLink to='/logout'>Logout</NavBtnLink> */
- /* <NavLink to="/logout" activeStyle>
-                    Logout
-                </NavLink> */
-/* <NavBtn>
-                <NavBtnLink to='logout'>Logout</NavBtnLink>
-            </NavBtn> */
+ 
