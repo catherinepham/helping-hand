@@ -3,6 +3,7 @@ import React, {createContext, useState} from 'react';
 import LoginForm from './components/Login/loginForm';
 import Navbar from './components/NavBar';
 import {BrowserRouter as Switch, Routes, Route} from 'react-router-dom';
+import HomePage from './pages/homepage';
 import Account from './pages/account';
 import Logout from './pages/logout';
 import { render } from '@testing-library/react';
@@ -53,7 +54,8 @@ function App() {
               </div>
               <Switch>
                 <Navbar />
-                 <Routes>
+                <Routes>
+                    <Route path='/homepage' component={HomePage} />
                     <Route path='/account' component={Account} />
                   </Routes>
               </Switch>
