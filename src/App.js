@@ -3,12 +3,13 @@ import React, {PropTypes, createContext, useState} from 'react';
 import LoginForm from './components/Login/loginForm';
 import Navbar from './components/NavBar';
 import Navb from './components/NavBar/index';
-import {BrowserRouter as Router, IndexRoute, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, IndexRoute, Route, Routes, Link} from 'react-router-dom';
 import HomePage from './pages';
 import Account from './pages/account'
 import { render } from '@testing-library/react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './components/NavBar/navBarElements'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import QueueTitle from './components/title';
 
 
 
@@ -45,7 +46,6 @@ function App() {
 
  
 
-    
   return (
     
     <div className="App">
@@ -54,29 +54,37 @@ function App() {
         {(user.email != "") ? (
             <div className="home">
          
-             <Router> 
 
-             
-                <Navbar nameU={user.name} />
-                <div className='bottom'>
-
-
-                <Routes>
-                  <Route path='/' exact component={HomePage} />
-                  <Route path='/account' component={<Account />} />
       
-                
-                </Routes>
+             <Router> 
+             <Navbar nameU={user.name} />
               
-                </div>   
+{/* 
+                <Routes>
+                  <Route exact path='/' component={HomePage} />
+                  <Route path='/account' component={Account} />
+                </Routes> */}
+
+                
               </Router> 
+
+              <div className='bottom'> 
+
+              <h1>hi</h1>
+              <QueueTitle />
+              {/* <Account /> */}
+
+                </div>    
+
+
+
               </div>
 
           
         ) : (
-          <div className='x'>
+       
           <LoginForm Login={Login} error={error}/>
-          </div>
+
         )}
     
     </div>

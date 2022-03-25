@@ -25,13 +25,13 @@ const Navbar = ({history,isLogged, nameU}) => {
 
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/" activeStyle>
+                    {/* <NavLink to="/" activeStyle>
                         Home Page
                     </NavLink>
 
                     <NavLink to="/account" activeStyle>
                         Account
-                    </NavLink>
+                    </NavLink> */}
                 
                     <NavLink to="/logout" activeStyle onClick={handleClick}>
                         Logout
