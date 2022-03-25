@@ -48,43 +48,41 @@ function App() {
 
   return (
     
+     
     <div className="App">
 
       
         {(user.email != "") ? (
             <div className="home">
          
-
-      
              <Router> 
-             <Navbar nameU={user.name} />
-              
-{/* 
+
+             
+                <Navbar nameU={user.name} />
+             
+
+
                 <Routes>
-                  <Route exact path='/' component={HomePage} />
-                  <Route path='/account' component={Account} />
-                </Routes> */}
+                  <Route path='/' exact component={HomePage} />
+                  <Route path='/account' component={<Account />} />
+      
+          
+                </Routes>
 
-                
+                <div className='bottom'>
+                  <h1>hi</h1>
+                  <QueueTitle />
+
+              
+                </div>   
               </Router> 
-
-              <div className='bottom'> 
-
-              <h1>hi</h1>
-              <QueueTitle />
-              {/* <Account /> */}
-
-                </div>    
-
-
-
               </div>
 
           
         ) : (
-       
+          <div className='x'>
           <LoginForm Login={Login} error={error}/>
-
+          </div>
         )}
     
     </div>

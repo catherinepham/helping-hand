@@ -1,5 +1,3 @@
-
-
 .home h1 {
   z-index: 2;
 }
@@ -11,7 +9,6 @@
   width: 50%;
   height: 80%;
 }
-
 
 .image-navbar {
   display: flex;
@@ -37,7 +34,7 @@ button {
   border: none;
   outline: none;
 }
-form {
+.x form {
   height: 100vh;
   display: flex;
   align-items: center;
