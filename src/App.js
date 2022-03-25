@@ -1,5 +1,4 @@
 import './App.css';
-import './pages/data.css'
 import React, {PropTypes, createContext, useState} from 'react';
 import LoginForm from './components/Login/loginForm';
 import Navbar from './components/NavBar';
