@@ -1,14 +1,16 @@
 import './App.css';
-import React, {createContext, useState} from 'react';
+import './pages/data.css'
+import React, {PropTypes, createContext, useState} from 'react';
 import LoginForm from './components/Login/loginForm';
 import Navbar from './components/NavBar';
-import {BrowserRouter as Switch, Routes, Route} from 'react-router-dom';
-import HomePage from './pages/homepage';
-import Account from './pages/account';
-import Logout from './pages/logout';
+import Navb from './components/NavBar/index';
+import {BrowserRouter as Router, IndexRoute, Route, Routes} from 'react-router-dom';
+import HomePage from './pages';
+import Account from './pages/account'
 import { render } from '@testing-library/react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './components/NavBar/navBarElements'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -42,28 +44,40 @@ function App() {
       setError("");
     }
 
+ 
+
     
   return (
     
     <div className="App">
+
       
         {(user.email != "") ? (
             <div className="home">
-              <div className="welcome">
-                    <h2>{user.name}</h2>
-              </div>
-              <Switch>
-                <Navbar />
+         
+             <Router> 
+
+             
+                <Navbar nameU={user.name} />
+                <div className='bottom'>
+
+
                 <Routes>
-                    <Route path='/homepage' component={HomePage} />
-                    <Route path='/account' component={Account} />
-                  </Routes>
-              </Switch>
-              <div className="bottom">
+                  <Route path='/' exact component={HomePage} />
+                  <Route path='/account' component={<Account />} />
+      
+                
+                </Routes>
+              
+                </div>   
+              </Router> 
               </div>
-            </div> 
+
+          
         ) : (
+          <div className='x'>
           <LoginForm Login={Login} error={error}/>
+          </div>
         )}
     
     </div>
@@ -76,7 +90,22 @@ export default App;
 
 
 
+{/*             
+               <div className="bottom">
 
+              </div>  */}
+/* <Switch> */
+      /* <Routes>
+                    <Route path='/homepage' component={HomePage} />
+                    <Route exact path='/account' component={Account} /> 
+                    <Route render={() => <h1>Not found!</h1>} />
+                    
+                  </Routes>
+
+              </Switch>
+               */
+
+ /* <Route exact path='/account' component={Account} /> */
 
   // {/* <h2>Welcome <span>{user.name}</span></h2> */}
   // {/* <button onClick={Logout}>Logout</button> */}

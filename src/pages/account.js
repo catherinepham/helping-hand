@@ -3,9 +3,8 @@ import React from 'react';
 const Account = () => {
   return (
    
-        <div className="header">
+        <div style={{alignContent:'center', zIndex:'4'}}>
             <h1> 
-              Welcome to Helping hand
               Here is your account information:
             </h1>
         </div> 

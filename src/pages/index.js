@@ -3,9 +3,9 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to Helping Hand</h1>
+      <h1 className="home">Welcome to Helping Hand</h1>
       <main>
-        The queue qill be here
+        The queue will be here
       </main>
     </div>
   );

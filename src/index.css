@@ -23,7 +23,19 @@
   height: 100%;
 }
 
-.welcome {
+.home h1 {
+  z-index: 2;
+}
+
+/* the text associated with the "account" page */
+.header-account h1 {
+  z-index: 15;
+  text-align: center;
+  width: 50%;
+  height: 80%;
+}
+
+/* .welcome {
   position: relative;
   z-index: 11;
   left: 0;
@@ -32,11 +44,17 @@
   display: flex;
   width: 57%;
   top: 8px;
-}
+} */
 
 .image-navbar {
   display: flex;
   justify-content: center;
+}
+
+.info {
+  z-index: 4;
+  background-color: fff;
+  position: center;
 }
 
 .bottom {
@@ -52,7 +70,7 @@ button {
   border: none;
   outline: none;
 }
-.App form {
+.x form {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -67,7 +85,6 @@ form {
   box-sizing: border-box;
   font-family: montserrat, sans-serif;
 }
-
 form:after {
   content: "";
   display: block;
@@ -96,21 +113,18 @@ form .header h1 {
   margin-bottom: 480px;
   margin-right: -420px;
 }
-
 form .form-inner h2 {
   color: rgb(107, 106, 106);
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-
 form .form-inner .form-group {
   display: block;
   width: 300px;
   margin-bottom: 15px;
   background-color: #fff;
 }
-
 .form-inner .form-group label {
   display: block;
   color: #666;
@@ -118,11 +132,9 @@ form .form-inner .form-group {
   margin-bottom: 5px;
   transition: 0.4s;
 }
-
 .form-inner .form-group:focus-within label {
   color: #68046b;
 }
-
 form .form-inner .form-group input {
   display: block;
   width: 100%;
@@ -131,13 +143,11 @@ form .form-inner .form-group input {
   border-radius: 8px;
   transition: 0.4s;
 }
-
 form .form-inner .form-group input:focus {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* "login" button */
-
 form .form-inner input[type="submit"] {
   display: inline-block;
   padding: 10px 15px;

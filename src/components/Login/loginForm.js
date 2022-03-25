@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 function LoginForm ({Login, error}) {
+
     const [details, setDetails] = useState({name:"", email:"", password:""}); 
     
     const submitHandler = e => {
@@ -39,3 +41,6 @@ function LoginForm ({Login, error}) {
     )
 }
 export default LoginForm;
+
+
+
