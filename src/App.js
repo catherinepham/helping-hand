@@ -11,6 +11,10 @@ import QueueTitle from './components/title';
 import Acc from './components/accountInfo';
 
 
+import styled from "styled-components";
+import GlobalSyles from "./GlobalStyles"; 
+import StudentQueue, { useStudentQueue} from './components/StudentQueue';
+//import StudentQueue from "./StudentQueue";
 
 function App() {
 
@@ -46,6 +50,8 @@ function App() {
  
 
   return (
+   <>
+    
     
      
     <div className="App">
@@ -64,7 +70,9 @@ function App() {
                   <h1>hi</h1>
                   <Acc emailA={user.email} />
                   <QueueTitle />
-                  
+
+                  <GlobalSyles />
+                  <StudentQueue />
               
                 </div>   
               </Router> 
@@ -77,7 +85,10 @@ function App() {
           </div>
         )}
     
+    
     </div>
+    
+    </>
   );
 
 };
