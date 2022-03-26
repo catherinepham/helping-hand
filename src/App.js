@@ -4,12 +4,11 @@ import LoginForm from './components/Login/loginForm';
 import Navbar from './components/NavBar';
 import Navb from './components/NavBar/index';
 import {BrowserRouter as Router, IndexRoute, Route, Routes, Link} from 'react-router-dom';
-import HomePage from './pages';
-import Account from './pages/account'
 import { render } from '@testing-library/react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './components/NavBar/navBarElements'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import QueueTitle from './components/title';
+import Acc from './components/accountInfo';
 
 
 
@@ -61,18 +60,11 @@ function App() {
                 <Navbar nameU={user.name} />
              
 
-
-                <Routes>
-                  <Route path='/' exact component={HomePage} />
-                  <Route path='/account' component={<Account />} />
-      
-          
-                </Routes>
-
                 <div className='bottom'>
                   <h1>hi</h1>
+                  <Acc emailA={user.email} />
                   <QueueTitle />
-
+                  
               
                 </div>   
               </Router> 
@@ -94,11 +86,17 @@ export default App;
 
 
 
-
-{/*             
+/* 
+                <Routes>
+                  <Route path='/' exact component={HomePage} />
+                  <Route path='/account' component={<Account />} />
+      
+          
+                </Routes> */
+/*             
                <div className="bottom">
 
-              </div>  */}
+              </div>  */
 /* <Switch> */
       /* <Routes>
                     <Route path='/homepage' component={HomePage} />

@@ -13,7 +13,7 @@ export default title
 const StyleT = {
     backgroundColor: 'white',
     fontSize: '25px',
-    marginTop: '8%',
+    marginTop: '0%',
     marginLeft: '25%',
     marginRight: '20%',
     borderRadius: '5px'
