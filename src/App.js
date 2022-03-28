@@ -62,13 +62,14 @@ function App() {
          
              <Router> 
 
-             
+            
                 <Navbar nameU={user.name} />
              
 
                 <div className='bottom'>
                   <h1>hi</h1>
-                  <Acc emailA={user.email} />
+                  <Acc emailA={user.email} nameA={user.name}/>
+
                   <QueueTitle />
 
                   <GlobalSyles />

@@ -8,7 +8,7 @@ const StyledStudentQueue = styled.div`
     marginTop: '0%',
     marginLeft: '25%',
     marginRight: '20%',
-    borderRadius: '5px'
+    borderRadius: '10px',
     position: fixed;
 //   //top: 6000;
 //   //right: 3000;

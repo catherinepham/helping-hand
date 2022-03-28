@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 3px;
-  background-color: pink;
+  background-color: #d9badf;
 
   display: flex;
   flex-wrap: nowrap;
