@@ -1,0 +1,23 @@
+{
+  "name": "Helping Hand",
+  "description": "Teaching Tool",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Click to open and raise your hand",
+    "default_icon": {
+    
+      "128": "/images/hand.png"
+    }
+  },
+  "icons": {
+    
+    "128": "/images/hand.png"
+  }
+  
+}
