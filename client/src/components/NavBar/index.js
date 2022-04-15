@@ -33,6 +33,8 @@ const Navbar = ({history,isLogged, nameU}) => {
                         Account
                     </NavLink> */}
                 
+                   
+
                     <NavLink to="/logout" activeStyle onClick={handleClick}>
                         Logout
                     </NavLink>

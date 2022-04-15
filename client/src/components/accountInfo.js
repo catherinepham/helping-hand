@@ -25,8 +25,8 @@ const B = {
 
 const S = {
     marginTop: '4%',
-    marginLeft: '1%',
-    marginRight: '80%',
+    marginLeft: '40%',
+    marginRight: '40%',
     backgroundColor: '#f9f2ff',
     borderRadius: '8px',
 }

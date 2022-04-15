@@ -9,6 +9,7 @@ import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './components/NavB
 import 'bootstrap/dist/css/bootstrap.min.css';
 import QueueTitle from './components/title';
 import Acc from './components/accountInfo';
+import StudentList from './components/studentList';
 
 
 import styled from "styled-components";
@@ -68,12 +69,15 @@ function App() {
 
                 <div className='bottom'>
                   <h1>hi</h1>
+                  
+
                   <Acc emailA={user.email} nameA={user.name}/>
 
-                  <QueueTitle />
+                  {/* <QueueTitle /> */}
+                  <StudentList />
 
-                  <GlobalSyles />
-                  <StudentQueue />
+                  {/* <GlobalSyles />
+                  <StudentQueue /> */}
               
                 </div>   
               </Router> 
