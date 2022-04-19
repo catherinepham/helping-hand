@@ -4,8 +4,8 @@ First clone repo and open in your prefered editor (ex. VS Code).
 
 To run both frontend and backend:
 - open 2 terminal windows
-- in one terminal, "cd server" , run "npm insall" and then "npm start"
-- in the other, "cd client" , run "npm insall" and then "npm start"
+- in one terminal, "cd server" , run "npm install" and then "npm start"
+- in the other, "cd client" , run "npm intsall" and then "npm start"
 
 To interact with user interface:
 - type in any name
