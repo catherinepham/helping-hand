@@ -7,6 +7,11 @@ To run both frontend and backend:
 - in one terminal, "cd server" , run "npm insall" and then "npm start"
 - in the other, "cd client" , run "npm insall" and then "npm start"
 
+To interact with user interface:
+- type in any name
+- use "admin@admin.com" for email and "admin" for password
+- you can delete students of the list, view account information and logout to be redirected to the login page
+
 To install the Chrome Extension:
 - go to chrome://extensions/
 - turn on developer mode
