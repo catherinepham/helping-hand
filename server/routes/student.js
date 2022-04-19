@@ -14,7 +14,7 @@ const ObjectId = require("mongodb").ObjectId;
 
 // This section will help you get a list of all the students.
 studentRoutes.route("/student").get(function (req, res) {
-  let db_connect = dbo.getDb("teachers");
+  let db_connect = dbo.getDb("HelpingHand");
   db_connect
     .collection("students")
     .find({})
